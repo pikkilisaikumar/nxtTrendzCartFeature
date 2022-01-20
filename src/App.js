@@ -37,7 +37,7 @@ class App extends Component {
     } else {
       const dataone = cartList.map(each => {
         if (each.id === product.id) {
-          return {...each, quantity: each.quantity + 1}
+          return {...each, quantity: each.quantity + product.quantity}
         }
         return {...each}
       })

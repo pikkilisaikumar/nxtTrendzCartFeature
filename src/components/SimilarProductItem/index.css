@@ -11,6 +11,11 @@
   }
 }
 
+.link-item {
+  text-decoration: None;
+  border-width: 0px;
+}
+
 .similar-product-img {
   width: 200px;
   border-radius: 8px;

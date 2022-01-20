@@ -46,7 +46,7 @@ class ProductItemDetails extends Component {
     const {match} = this.props
     const {params} = match
     const {id} = params
-
+    console.log(id)
     this.setState({
       apiStatus: apiStatusConstants.inProgress,
     })
