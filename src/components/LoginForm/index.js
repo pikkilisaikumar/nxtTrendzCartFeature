@@ -10,6 +10,7 @@ class LoginForm extends Component {
     password: '',
     showSubmitError: false,
     errorMsg: '',
+    showPassword: true,
   }
 
   onChangeUsername = event => {
@@ -18,6 +19,10 @@ class LoginForm extends Component {
 
   onChangePassword = event => {
     this.setState({password: event.target.value})
+  }
+
+  onCheckboxClicked = () => {
+    this.setState(prevState => ({showPassword: !prevState.showPassword}))
   }
 
   onSubmitSuccess = jwtToken => {
@@ -52,22 +57,34 @@ class LoginForm extends Component {
   }
 
   renderPasswordField = () => {
-    const {password} = this.state
+    const {password, showPassword} = this.state
 
     return (
-      <>
+      <div>
         <label className="input-label" htmlFor="password">
           PASSWORD
         </label>
+
         <input
-          type="password"
+          type={showPassword ? 'password' : 'text'}
           id="password"
-          className="password-input-field"
+          className="password-input-field "
           value={password}
           onChange={this.onChangePassword}
           placeholder="Password"
         />
-      </>
+        <div className="showpassword-container">
+          <input
+            type="checkbox"
+            className="username-input-field"
+            id="showpassword"
+            onChange={this.onCheckboxClicked}
+          />
+          <label htmlFor="showpassword" className="show-password-styling">
+            ShowPassword
+          </label>
+        </div>
+      </div>
     )
   }
 
@@ -119,6 +136,7 @@ class LoginForm extends Component {
           />
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
+
           <button type="submit" className="login-button">
             Login
           </button>

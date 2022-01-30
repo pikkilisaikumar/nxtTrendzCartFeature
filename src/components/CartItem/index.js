@@ -1,5 +1,8 @@
 import {BsPlusSquare, BsDashSquare} from 'react-icons/bs'
+
 import {AiFillCloseCircle} from 'react-icons/ai'
+
+import {RiDeleteBin6Line} from 'react-icons/ri'
 
 import CartContext from '../../context/CartContext'
 
@@ -44,7 +47,11 @@ const CartItem = props => (
                 onClick={Minusbuttonclicked}
                 testid="minus"
               >
-                <BsDashSquare color="#52606D" size={12} />
+                {quantity === 1 ? (
+                  <RiDeleteBin6Line />
+                ) : (
+                  <BsDashSquare color="#52606D" size={12} />
+                )}
               </button>
               <p className="cart-quantity">{quantity}</p>
               <button

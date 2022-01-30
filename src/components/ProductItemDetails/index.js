@@ -2,6 +2,7 @@ import {Component} from 'react'
 import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
+
 import {BsPlusSquare, BsDashSquare} from 'react-icons/bs'
 
 import CartContext from '../../context/CartContext'
@@ -46,7 +47,7 @@ class ProductItemDetails extends Component {
     const {match} = this.props
     const {params} = match
     const {id} = params
-    console.log(id)
+    // console.log(id)
     this.setState({
       apiStatus: apiStatusConstants.inProgress,
     })

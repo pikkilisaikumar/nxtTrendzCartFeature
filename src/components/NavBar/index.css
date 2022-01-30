@@ -1,0 +1,51 @@
+/* Write your code here. */
+.nav-container-background {
+  background-color: #fbc7d4;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inside-nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.emojiheadingone {
+  color: white;
+  font-family: Ubuntu;
+  font-size: 22px;
+}
+.scoreparagraph {
+  font-family: Roboto;
+  padding-top: 4px;
+  padding-right: 13px;
+}
+
+.top-score-paragraph {
+  padding-top: 13px;
+  padding-right: 13px;
+}
+
+.score-top-score-container-exit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .score-top-score-container-exit {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.score-topscore-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}

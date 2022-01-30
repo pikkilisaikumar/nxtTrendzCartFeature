@@ -11,6 +11,54 @@
     border-bottom-style: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .logout-paragraph {
+    color: white;
+    font-family: roboto;
+  }
+  .logout-paragraph1 {
+    color: white;
+    font-family: roboto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logout-paragraph1 {
+    color: white;
+    font-family: roboto;
+    font-size: 13px;
+  }
+  .logout-paragraph {
+    color: white;
+    font-family: roboto;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .close-confirm-container-one {
+    display: flex;
+  }
+}
+
+.close-container-one {
+  background-color: #1e293b;
+  height: 200px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
 .nav-content {
   display: flex;
@@ -172,6 +220,32 @@
   padding-right: 5px;
   padding-bottom: 2px;
   margin-left: 8px;
+}
+
+.trigger-button {
+  color: white;
+  outline: none;
+  text-decoration: none;
+  font-family: Roboto;
+  border: 2px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .trigger-button {
+    color: white;
+    outline: none;
+    text-decoration: none;
+    font-family: Roboto;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 }
 
 @media screen and (min-width: 768px) {

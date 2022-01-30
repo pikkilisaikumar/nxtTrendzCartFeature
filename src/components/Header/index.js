@@ -1,5 +1,12 @@
 import {Link, withRouter} from 'react-router-dom'
+
 import Cookies from 'js-cookie'
+
+import {SiDcentertainment} from 'react-icons/si'
+
+import Popup from 'reactjs-popup'
+
+import 'reactjs-popup/dist/index.css'
 
 import CartContext from '../../context/CartContext'
 
@@ -41,17 +48,50 @@ const Header = props => {
             />
           </Link>
 
-          <button
-            type="button"
-            className="nav-mobile-btn"
-            onClick={onClickLogout}
+          <Popup
+            className="popup-content"
+            modal
+            trigger={
+              <button
+                type="button"
+                className="nav-mobile-btn"
+                onClick={onClickLogout}
+              >
+                <img
+                  src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png"
+                  alt="nav logout"
+                  className="nav-bar-img"
+                />
+              </button>
+            }
           >
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png"
-              alt="nav logout"
-              className="nav-bar-img"
-            />
-          </button>
+            {close => (
+              <div className="close-container-one">
+                <div>
+                  <p className="logout-paragraph1">
+                    Are you sure, you want to logout ?
+                  </p>
+                </div>
+                <div className="close-confirm-container-one">
+                  <button
+                    type="button"
+                    className="trigger-button1 m-2 btn btn-danger"
+                    onClick={() => close()}
+                  >
+                    Close
+                  </button>
+
+                  <button
+                    type="button"
+                    className="trigger-button1 btn btn-primary m-2"
+                    onClick={onClickLogout}
+                  >
+                    Confirm
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
         </div>
 
         <div className="nav-bar-large-container">
@@ -81,14 +121,50 @@ const Header = props => {
                 {renderCartItemsCount()}
               </Link>
             </li>
+
+            <li className="nav-menu-item">
+              <Link to="/entertainment" className="nav-link">
+                Entertainment
+              </Link>
+            </li>
           </ul>
-          <button
-            type="button"
-            className="logout-desktop-btn"
-            onClick={onClickLogout}
+
+          <Popup
+            className="popup-content"
+            modal
+            trigger={
+              <button type="button" className="logout-desktop-btn">
+                Logout
+              </button>
+            }
           >
-            Logout
-          </button>
+            {close => (
+              <div className="close-container-one">
+                <div>
+                  <p className="logout-paragraph">
+                    Are you sure, you want to logout ?
+                  </p>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    className="trigger-button m-2 btn btn-danger"
+                    onClick={() => close()}
+                  >
+                    Close
+                  </button>
+
+                  <button
+                    type="button"
+                    className="trigger-button btn btn-primary m-2"
+                    onClick={onClickLogout}
+                  >
+                    Confirm
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
         </div>
       </div>
       <div className="nav-menu-mobile">
@@ -120,6 +196,11 @@ const Header = props => {
                 className="nav-bar-img"
               />
               {renderCartItemsCount()}
+            </Link>
+          </li>
+          <li className="nav-menu-item-mobile">
+            <Link to="/entertainment" className="nav-link">
+              <SiDcentertainment />
             </Link>
           </li>
         </ul>

@@ -8,6 +8,10 @@ import ProductItemDetails from './components/ProductItemDetails'
 import Cart from './components/Cart'
 import NotFound from './components/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
+import Entertainment from './components/Entertainment'
+import EmojiGame from './components/EmojiGame'
+import RockPaperScissors from './components/RockPaperScissors'
+import MatchGame from './components/MatchGame'
 import CartContext from './context/CartContext'
 
 import './App.css'
@@ -77,7 +81,6 @@ class App extends Component {
 
   render() {
     const {cartList} = this.state
-
     return (
       <CartContext.Provider
         value={{
@@ -99,6 +102,27 @@ class App extends Component {
             component={ProductItemDetails}
           />
           <ProtectedRoute exact path="/cart" component={Cart} />
+          <ProtectedRoute
+            exact
+            path="/entertainment"
+            component={Entertainment}
+          />
+          <ProtectedRoute
+            exact
+            path="/entertainment/emoji"
+            component={EmojiGame}
+          />
+          <ProtectedRoute
+            exact
+            path="/entertainment/rockpapergame"
+            component={RockPaperScissors}
+          />
+
+          <ProtectedRoute
+            exact
+            path="/entertainment/matchgame"
+            component={MatchGame}
+          />
           <Route path="/not-found" component={NotFound} />
           <Redirect to="not-found" />
         </Switch>

@@ -1,0 +1,20 @@
+.list-Tabitems {
+  list-style-type: none;
+  padding: 13px;
+  cursor: pointer;
+}
+.displaytext1 {
+  color: white;
+  font-family: 'Roboto';
+  font-weight: bold;
+  background-color: transparent;
+  border-width: 0px;
+}
+.displaytext {
+  color: #fec653;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: transparent;
+  border-width: 0px;
+}

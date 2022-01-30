@@ -42,7 +42,10 @@
     margin-right: 20px;
   }
 }
-
+.showpassword-container {
+  display: flex;
+  align-items: center;
+}
 .login-website-logo-desktop-img {
   width: 185px;
 }
@@ -100,6 +103,18 @@
   outline: none;
 }
 
+.username-input-field1 {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  /* padding: 8px 16px 8px 16px; */
+  outline: none;
+}
+
 .password-input-field {
   font-size: 14px;
   height: 40px;
@@ -108,8 +123,20 @@
   color: #64748b;
   border-radius: 2px;
   margin-top: 5px;
+  width: 100%;
   padding: 8px 16px 8px 16px;
   outline: none;
+}
+
+.checkboxclass {
+  cursor: pointer;
+}
+
+.show-password-styling {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: blue;
+  padding-top: 10px;
 }
 
 .login-button {

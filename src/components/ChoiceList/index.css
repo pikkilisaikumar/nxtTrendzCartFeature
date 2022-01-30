@@ -1,0 +1,12 @@
+.images-of-gaming-setup {
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .images-of-gaming-setup {
+    height: 70px;
+    width: 70px;
+    /* margin: 30px; */
+  }
+}

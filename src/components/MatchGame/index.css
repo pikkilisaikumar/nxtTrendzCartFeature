@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.background-details {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  min-height: 100vh;
+}
+.scoreparagraph {
+  color: white;
+  font-family: 'Roboto';
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.thirdnavcontainer {
+  display: flex;
+  align-items: center;
+}
+.websitelogoimageone {
+  height: 30px;
+  width: 100px;
+}
+.websitelogoimageone1 {
+  height: 30px;
+  width: 50px;
+}
+.unorderlisttabitems {
+  display: flex;
+}
+.afternavbarcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.anothernavcontainer {
+  display: flex;
+  align-items: center;
+}
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2c0e3a;
+  padding: 10px;
+  list-style-type: none;
+}
+.randomimageone {
+  height: 220px;
+  width: 350px;
+  margin-top: 30px;
+}
+.secondunorderlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.containerOne {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.winningOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+}
+.trophyimageone {
+  height: 100px;
+  width: 100px;
+}
+.resetButtonclicked {
+  background-color: #cf60c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Roboto';
+  border-width: 0px;
+  padding: 5px;
+  cursor: pointer;
+}
+.playagainparagraph {
+  color: white;
+  font-family: 'Roboto';
+  background-color: transparent;
+  border-width: 0px;
+}
+.yourscore {
+  color: white;
+  font-family: 'Roboto';
+}
+.headingcount {
+  color: white;
+  font-family: 'Roboto';
+}

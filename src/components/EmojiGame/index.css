@@ -1,0 +1,17 @@
+.emoji-first-container-background {
+  background-color: #9796f0;
+  min-height: 100vh;
+  padding: 20px;
+}
+.emojiunorderlistone {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.winorlosecard-container-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
